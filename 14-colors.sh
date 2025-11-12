@@ -19,7 +19,7 @@ validate(){
 dnf list installed ansible 
     if [ $? -ne 0 ]; then
 dnf install ansible -y
-validate $? "Ansible"
+validate $? "ansible"
     else
     echo -e "Ansible is already Installed ... $YELLOW SKIPPING ... $NORMAL"
     fi
@@ -27,7 +27,7 @@ validate $? "Ansible"
 dnf list installed nginx
     if [ $? -ne 0 ]; then
 dnf install nginx -y
-validate $? "Nginx"
+validate $? "aginx"
     else
         echo -e "Nginx is already Installed ... $YELLOW SKIPPING ... $NORMAL"
     fi
