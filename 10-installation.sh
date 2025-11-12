@@ -12,3 +12,4 @@ if [ $? -ne 0 ]; then
     echo "ERROR:: Installing Ansible is Failure"
 else    
     echo "Installing Ansible is Success" 
+fi
