@@ -8,4 +8,4 @@ echo "Sum is: ${SUM}"
 
 LEADERS=("Linux" "Shell" "Docker")
 
-echo "All Leaders are: ${$LEADERS[@]}
+echo "All Leaders are: ${$LEADERS[@]}"
