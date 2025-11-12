@@ -9,3 +9,4 @@ echo "Sum is: ${SUM}"
 LEADERS=("Linux" "Shell" "Docker")
 
 echo "All Leader: ${LEADERS[@]}"
+echo "First Leader: ${LEADERS[0]}"
