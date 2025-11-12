@@ -2,7 +2,6 @@
 
 NUMBER1=100
 NUMBER2=500
-NAME=DevOps
 
-SUM=$(($NUMBER1+$NUMBER2+$NAME))
+SUM=$(($NUMBER1+$NUMBER2))
 echo "Sum is: ${SUM}"
