@@ -2,7 +2,7 @@
 
 #Here no space before are after equal
 PERSON1=Pavan
-PERSON2=Kumar
+PERSON2=Praveen
 
 echo "$PERSON1:: Hi $PERSON2, How are you?"
 echo "$PERSON2:: Hello $PERSON1, I am fine. How are you?"
