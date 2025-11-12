@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Here no space before are after equal
+
 PERSON1=Pavan
 PERSON2=Praveen
 
