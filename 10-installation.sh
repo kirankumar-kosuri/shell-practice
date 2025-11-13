@@ -3,14 +3,13 @@
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-    echo "ERROR:: PLEASE RUN THIS SCRIPT WITH ROOT PREVELAGE"
-    exit 1
+    echo "ERROR:: PLEASE RUN THIS SCRIPT WITH ROOT ACCESS"
 fi
 
-    dnf install nginx -y
+    dnf install python3 - y
+
 if [ $? -ne 0 ]; then
-    echo "Installing Nginx is FAILURE"
-    exit 1
+    echo "Installing Python3 is FAILURE"
 else
-    echo "Installing Nginx is SUCCESS"
+    echo "Installing Python3 is SUCCESS"
 fi
