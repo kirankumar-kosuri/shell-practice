@@ -7,7 +7,7 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
-    dnf install python3 - y
+    dnf install python3 -y
 
 if [ $? -ne 0 ]; then
     echo "Installing Python3 is FAILURE"
