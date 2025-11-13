@@ -1,17 +1,26 @@
+# #!/bin/bash
+
+# USERID=$(id -u)
+
+# if [ $USERID -ne 0 ]; then
+#     echo "ERROR:: PLEASE RUN THIS SCRIPT WITH ROOT PRIVELAGE"
+#     exit 1
+# fi
+
+# dnf install ansible -y
+
+# if [ $? -ne 0 ]; then
+#     echo "ERROR:: Installing Ansible is Failure"
+#     exit 1
+# else    
+#     echo "Installing Ansible is Success" 
+# fi
+
 #!/bin/bash
 
-USERID=$(id -u)
+USERID=(id -u)
 
 if [ $USERID -ne 0 ]; then
-    echo "ERROR:: PLEASE RUN THIS SCRIPT WITH ROOT PRIVELAGE"
+    echo "ERROR:: PLEASE RUN THIS SCRIPT WITH ROOT PREVELAGE"
     exit 1
-fi
-
-dnf install ansible -y
-
-if [ $? -ne 0 ]; then
-    echo "ERROR:: Installing Ansible is Failure"
-    exit 1
-else    
-    echo "Installing Ansible is Success" 
 fi

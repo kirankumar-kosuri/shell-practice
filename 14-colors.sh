@@ -27,7 +27,7 @@ validate $? "ansible"
 dnf list installed nginx
     if [ $? -ne 0 ]; then
 dnf install nginx -y
-validate $? "aginx"
+validate $? "nginx"
     else
         echo -e "Nginx is already Installed ... $YELLOW SKIPPING ... $NORMAL"
     fi
