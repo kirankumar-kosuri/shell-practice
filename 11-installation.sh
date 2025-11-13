@@ -25,11 +25,11 @@ else
     echo "Installing Nginx is SUCCESS"
 fi
 
-    dnf install botocore boto3 -y
+    dnf install mysqld -y
 
 if [ $? -ne 0 ]; then
-    echo "Installing BotoCore Boto3 is FAILURE"
+    echo "Installing Mysqld is FAILURE"
     exit 1
 else
-    echo "Installing BotoCore Boto3 is SUCCESS"
+    echo "Installing Mysqld is SUCCESS"
 fi
