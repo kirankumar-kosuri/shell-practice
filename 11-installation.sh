@@ -2,6 +2,8 @@
 
 USERID=$(id -u)
 
+# Ckecking Weather the User have root access or not
+
 if [ $USERID -ne 0 ]; then
     echo "ERROR:: PLEASE RUN THIS SCRIPT UNDER ROOT ACCESS"
     exit 1
