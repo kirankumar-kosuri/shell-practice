@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Ckecking Weather the User have root access or not
+
 USERID=$(id -u)
 
 RED="\e[31m"
