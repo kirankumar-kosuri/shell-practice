@@ -15,10 +15,10 @@ fi
 
 validate(){
     if [ $1 -ne 0 ]; then
-    echo "Installing $2 ... $RED FAILURE $NORMAL"
+    echo -e "Installing $2 ... $RED FAILURE $NORMAL"
     exit 1
 else
-    echo "Installing $2 ... $GREEN SUCCESS $NORMAL"
+    echo -e "Installing $2 ... $GREEN SUCCESS $NORMAL"
 fi
 }
 
@@ -27,7 +27,7 @@ fi
     dnf install ansible -y
     validate $? "Ansible"
     else
-        echo "Ansible is Already Installed ... $YELLOW SKIPPING $NORMAL"
+        echo -e "Ansible is Already Installed ... $YELLOW SKIPPING $NORMAL"
     fi
 
     dnf list installed nginx
@@ -35,13 +35,13 @@ fi
     dnf install nginx -y
     validate $? "Nginx"
     else 
-        echo "Nginx is Already Installed ... $YELLOW SKIPPING $NORMAL"
+        echo -e "Nginx is Already Installed ... $YELLOW SKIPPING $NORMAL"
     fi
     dnf list installed mysql
     if [ $? -ne 0 ]; then
     dnf install mysql -y
     validate $? "Mysql"
     else
-        echo "Mysql is Already Installed ... $YELLOW SKIPPING $NORMAL"
+        echo -e "Mysql is Already Installed ... $YELLOW SKIPPING $NORMAL"
     fi
 
